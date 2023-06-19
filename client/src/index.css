@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input{
+  padding: 3px;
+  border: 1px solid white;
+  top: 0;
+  right: 0;
+  width: 32px;
+  background-color: #2573ef;
+  transition: 0.5s ease-in-out;
+  border-radius: 60px;
+  margin-left: 55px;
+}
+.photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: fill;
+  padding: 4px;
+  border: 1px solid black;
+  top: 0;
+  right: 0;
+  width: 36px;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+  border-radius: 60px;
+  margin-left: 55px;
+}
+.transition{
+  transition: 0.5s ease;
+}
+.hid{
+  display: none;
+}
+.hid-active{
+  background-color: #2573ef;
+  display: block;
+}
+
+.btn{
+  padding: 1px;
+  top: 60%;
+  right: 10px;
+  position: absolute;
+  transform: translate(7px,-16px);
+  color: white;
+  background-color:#2573ef;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.input-active{
+  color: white;
+  border:1px solid white;
+  padding: 3px;
+  width: 300px;
+  transform: translate(10px);
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+  background-color: #2573ef;
+}
+.input:focus{
+  border: none;
+}
+
+.box{
+  display: flex;
+  justify-items: center;
+  align-items:center;
+  background: black;
+  margin: 2px;
+}
+
+@media screen and (max-width: 767px){
+  #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+  .menu-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: 0.5s ease;
+    color: white;
+  }
+  
+  #slide_view{
+    display: flex;
+    flex-direction: column;
+    background: #2573ef;
+    width: 220px;
+    height: 94vh;
+    transition: 0.5s ease-in-out;
+  }
+  .nor{
+    display: none;
+    transition: 0.5s ease;
+  }
+   .slide{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #005469;
+    left: -220px;
+    transition: 0.5s ease;
+   }
+   .pos{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media screen and (min-width: 768px){
+  .menu-btn{
+    display: flex;
+    margin: 12px;
+    align-items: center;
+    transition: 0.5s ease;
+    color: white;
+  }
+  .menu_btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+  #slide_view{
+    display: flex;
+    flex-direction: column;
+    background: #2573ef;
+    width: 220px;
+    height: 94vh;
+    transition: 0.5s ease-in-out;
+  }
+  .nor{
+    display: none;
+    transition: 0.5s ease;
+  }
+   .slide{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #005469;
+    left: -220px;
+    transition: 0.5s ease;
+   }
+   .pos{
+    display: flex;
+    flex-direction: row;
+   }
+}
+.nor{
+  display: none;
+}
+ .slide{
+  position: absolute;
+  display: block;
+  list-style: none;
+  background-color: #005469;
+  left: -220px;
+  transition: all 0.5s ease-in-out;
+ }
+ #grp_msg::placeholder{
+  color: black;
+ }
+ #grp_msg{
+  border: none;
+  margin: 5;
+  border-radius: 60px;
+  outline: none;
+ }
+ .line{
+  padding: 0.5px;
+  border: 1px solid white;
+  top: 0;
+  right: 0;
+  background-color: lightgray;
+  transition: 0.5s ease-in-out;
+  border-radius: 60px;
+  margin-left: 25px;
+  margin-right: 25px;
+ }
+ .clrtodo{
+  color: #22d3ee;
+ }
+ .clrdoing{
+  color: #6366f1;
+ }
+ .clrdone{
+  color: #22c55e;
+ }
+ 
+
+
+
