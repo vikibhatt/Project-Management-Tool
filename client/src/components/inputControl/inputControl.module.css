@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.container label {
+  font-weight: 500;
+  color: #252525;
+  font-size: 0.9rem;
+}
+
+.container input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: 200ms;
+}
+
+.container input:hover {
+  border-color: #bbbbbb;
+}
+
+.container input:focus {
+  border-color: #22c48b;
+}
+
+.inputContainer {
+  position: relative;
+  max-width: 100%;
+}
+
+.inputContainer:hover .icon svg {
+  color: #5a5a5a;
+}
+
+.inputContainer:focus-within .icon svg {
+  color: #22c48b;
+}
+
+.inputContainer .icon {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.inputContainer .icon svg {
+  height: 15px;
+  width: 15px;
+  color: #bbb;
+}

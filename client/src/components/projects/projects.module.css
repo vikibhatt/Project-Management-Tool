@@ -1,0 +1,352 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #e2fff5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  .header .heading {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  
+  .header .heading span {
+    color: #22c48b;
+    font-size: 2.7;
+    text-transform: capitalize;
+  }
+  
+  .header .logout {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .header .logout svg {
+    height: 18px;
+    width: 18px;
+    transition: 200ms;
+  }
+  
+  .header .logout {
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 200ms;
+  }
+  
+  .header .logout:hover,
+  .header .logout:hover svg {
+    color: #22c48b;
+  }
+  
+  .container .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+  }
+  
+  .section .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  .profile {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .profile .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile .left .progress {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .profile .left .image {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+  }
+  
+  .profile .left .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  .profile .left .image .camera {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    z-index: 10;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+  }
+  
+  .profile .left .image .camera svg {
+    height: 22px;
+    width: 22px;
+    color: #22c48b;
+  }
+  
+  .profile .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .profile .right .row {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .profile .right .row > div {
+    flex: 1;
+  }
+  
+  .footer {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .footer .error {
+    flex: 1;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #ff3511;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .projectsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .projects .project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgb(59, 59, 59);
+    padding: 20px;
+  }
+  
+  .project .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  .project .links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+  
+  .project .links svg {
+    height: 22px;
+    width: 22px;
+    color: rgb(59, 59, 59);
+    transition: 200ms;
+    cursor: pointer;
+  }
+  
+  .project .links svg:hover {
+    color: #22c48b;
+  }
+
+  .button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    background-color: #22c48b;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+    transition: background-color 300ms, transform 200ms;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    transition: 0.5s;
+    background-color: #33e4a6;
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  
+  .button:disabled {
+    background-color: gray !important;
+    cursor: not-allowed;
+  }
+
+  .message .icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+  }
+  .message .icon p{
+    font-weight: bold;
+  }
+  
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile .left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile .left .image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .profile .left .image p{
+    font-weight: bold;
+  }
+  .profile .left .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .searchbar{
+    border: 1px solid black;
+    width: 20rem;
+    padding: 7px;
+    padding-left: 10px;
+    outline: none;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  .searchheader{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+  }
+  .ico svg{
+    width: 20px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #22c48b;
+  }
+  .ico svg:hover{
+    cursor: pointer;
+    background-color: #33e4a6;
+  }
+  .project:hover {
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+  }
+  .ico:hover,.ico svg{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  .back{
+    display: flex;
+    align-items: center;
+  }
+  .head{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .back:hover{
+    color: #22c48b;
+    transition: 300ms;
+  }
+
+  .btn.expanded {
+    background-color: #e2e2e2;
+    color: black;
+  }
+  
+  .messageContent {
+    display: block;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: black;
+    transition: 200ms;
+  }
+
+  
+  
+  
+  
+  
+  
+  
